@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "Trajan Pro";
+    src: url(fonts/Trajan_Pro_Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Trajan Pro";
+    src: url(fonts/Trajan_Pro_Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat;
+    font-size: 13pt;
+    background-color: #F8F8F8;
+}
+
+h1 {
+    font-size: 50pt;
+}
+
+@media (max-width: 1600px) {
+    h1 {
+        font-size: 40pt;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 35pt;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30pt;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav-mar {
+    margin: 4px 25px
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+
+}
+
+.logo {
+    font-size: 18pt;
+    text-decoration: overline;
+}
+
+.pos {
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+}
+
+.introd-div {
+    background-image: url(img/introducao_foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+}
+
+.interno-1 {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.h1-introd {
+    margin-right: 70px;
+    color: #ffffff;
+    font-family: Trajan Pro;
+}
+
+.seta {
+    margin-left: 40%;
+    border: #ffffff;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+    border-style: solid;
+    border-radius: 60px;
+    transition: .2s;
+}
+
+.seta:hover {
+    background-color: rgba(128, 128, 128, 0.466);
+}
+
+.img-seta {
+    margin-top: 30px;
+    max-width: 10%;
+}
+
+#linha0 {
+	width: 100%;
+	height: 3px;
+	background-color: #212529;
+    margin-bottom: 40px;
+}
+
+.h1-sm {
+    margin: 35px;
+}
+
+#linha1 {
+	width: 57%;
+	height: 3px;
+	background-color: #212529;
+	margin-left: 30px;
+    margin-top: -32px;
+    margin-bottom: 40px;
+}
+
+.p-sm {
+    margin-left: 45px;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.retrato {
+    max-width: 45%;
+    border: #212529;
+    border-style: solid;
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
+
+#linha1-5 {
+	width: 100%;
+	height: 3px;
+	background-color: transparent;
+    margin-bottom: 70px;
+}
+
+.h1-p {
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+#linha2 {
+	width: 27%;
+	height: 3px;
+	background-color: #212529;
+	margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.margem {
+    margin-bottom: 150px;
+}
+
+.c-item {
+    height: 600px;
+    border: #212529;
+    border-style: solid;
+    border-width: 6px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.c-btn {
+    text-decoration: None;
+    color: #ffffff;
+}
+
+.contato {
+    background-color: #212529;
+    color: #ffffff;
+    min-height: 30vh;
+}
+
+.h1-c {
+    padding-top: 20px;
+    margin-left: 35px;
+}
+
+#linha3 {
+	width: 16%;
+	height: 3px;
+	background-color: #ffffff;
+	margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.p-cont1 {
+    margin-left: 10px;
+    font-size: 20pt;
+}
+
+.p-cont1::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(img/icon_tel.png) no-repeat;
+    background-size: contain;
+}
+
+.p-cont2 {
+    margin-left: 10px;
+    font-size: 20pt;
+}
+
+.p-cont2::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(img/icon_email.png) no-repeat;
+    background-size: contain;
+}
+
+.p-cont3 {
+    margin-left: 10px;
+    font-size: 20pt;
+    text-decoration: None;
+    color: #ffffff;
+}
+
+.p-cont3::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(img/icon_link.png) no-repeat;
+    background-size: contain;
+}
+
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

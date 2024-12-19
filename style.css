@@ -26,6 +26,33 @@ h1 {
     h1 {
         font-size: 40pt;
     }
+
+    .p-cont1 {
+        font-size: 18pt;
+    }
+    
+    .p-cont1::before {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .p-cont2 {
+        font-size: 18pt;
+    }
+    
+    .p-cont2::before {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .p-cont3 {
+        font-size: 18pt;
+    }
+    
+    .p-cont3::before {
+        width: 22px;
+        height: 22px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -264,6 +291,39 @@ img {
     height: 25px;
     background: url(img/icon_link.png) no-repeat;
     background-size: contain;
+}
+
+@media (max-width: 1600px) {
+    .p-cont1, .p-cont2, .p-cont3 {
+        font-size: 18pt;
+    }
+    
+    .p-cont1::before, .p-cont2::before, .p-cont3::before {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 900px) {
+    .p-cont1, .p-cont2, .p-cont3 {
+        font-size: 16pt;
+    }
+    
+    .p-cont1::before, .p-cont2::before, .p-cont3::before {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+@media (max-width: 600px) {
+    .p-cont1, .p-cont2, .p-cont3 {
+        font-size: 14pt;
+    }
+    
+    .p-cont1::before, .p-cont2::before, .p-cont3::before {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 .col-md-4 {
